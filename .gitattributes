@@ -1,0 +1,5 @@
+# Ignorar arquivos ASP.NET e ShaderLab na análise de Linguist
+*.cs linguist-detectable=true
+*.cshtml linguist-detectable=false
+*.shader linguist-detectable=false
+*.hlsl linguist-detectable=false
