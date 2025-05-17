@@ -1,5 +1,16 @@
-# Ignorar arquivos ASP.NET e ShaderLab na análise de Linguist
+# Forçar detecção de C# como linguagem principal
 *.cs linguist-detectable=true
-*.cshtml linguist-detectable=false
+
+# Ignorar arquivos que causam interferência na linguagem principal
 *.shader linguist-detectable=false
 *.hlsl linguist-detectable=false
+*.cginc linguist-detectable=false
+*.uss linguist-detectable=false
+*.uxml linguist-detectable=false
+*.cshtml linguist-detectable=false
+
+# Ignorar arquivos de shaders Unity por completo
+Assets/**/*.shader linguist-detectable=false
+Assets/**/*.cginc linguist-detectable=false
+Packages/**/*.shader linguist-detectable=false
+Packages/**/*.cginc linguist-detectable=false
